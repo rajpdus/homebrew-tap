@@ -1,6 +1,6 @@
 cask "androidft" do
   version "0.1.0"
-  sha256 "446d4264b8e16b50748fc9e6a80c60c7c918fe45f32fe2bf669cbcac1c9ebada"
+  sha256 "2efdaddff53e6aa781b910f197c2fa6c86120316ad9ad71b36042c74b8f347bd"
 
   url "https://github.com/rajpdus/androidft/releases/download/v#{version}/AndroidFT-#{version}.zip"
   name "AndroidFT"
@@ -19,9 +19,8 @@ cask "androidft" do
 
   # The app is signed ad hoc (no Apple Developer ID); without this Gatekeeper
   # refuses to open the downloaded copy.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/AndroidFT.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/AndroidFT.app"]
   end
 
   zap trash: [

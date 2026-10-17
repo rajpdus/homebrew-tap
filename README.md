@@ -4,6 +4,7 @@ Homebrew tap for [rajpdus](https://github.com/rajpdus) projects.
 
 ```sh
 brew tap rajpdus/tap
+brew trust rajpdus/tap        # Homebrew 7 asks you to trust third-party taps once
 brew install --cask androidft
 ```
 
