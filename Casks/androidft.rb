@@ -1,6 +1,6 @@
 cask "androidft" do
-  version "0.1.1"
-  sha256 "cf70638375a72fa01defab1b4922522a1fa80fc150afaa70d626a46e5925ae0c"
+  version "0.1.2"
+  sha256 "ab6dc42da8a3e673ad0e5002d831c5e7abf74ff92a4bc0ed1051969dbe0df36d"
 
   url "https://github.com/rajpdus/androidft/releases/download/v#{version}/AndroidFT-#{version}.zip"
   name "AndroidFT"
