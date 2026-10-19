@@ -1,6 +1,6 @@
 cask "cammob" do
-  version "0.1.1"
-  sha256 "efd287ccdf135f841ab33ba1ad9ced9121da6d80e40e82b36ebb20da65bb969d"
+  version "0.1.2"
+  sha256 "e56b7852dde38cba06f653ac8bd9f593e70a4c033e733ec3622e2be686aed27a"
 
   url "https://github.com/rajpdus/cammob/releases/download/v#{version}/CamMob-#{version}.zip"
   name "CamMob"
